@@ -1,0 +1,260 @@
+/* Estilos para el botón "Volver al Inicio" */
+.btn-volver {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    z-index: 1000;
+}
+
+.btn-volver:hover {
+    background-color: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.products {
+    margin: 2rem 0;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.product-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.product {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product-txt {
+    padding: 1rem;
+    text-align: center;
+}
+
+.product-txt h3 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.product-txt p {
+    margin: 0.5rem 0;
+    color: #777;
+}
+
+.precio {
+    font-weight: bold;
+    color: #000000;
+}
+
+.agregar-carrito {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.agregar-carrito:hover {
+    background-color: #000000;
+}
+
+/* Estilos para el carrito */
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 100%;
+    background-color: #696060;
+    padding: 20px;
+    min-width: 300px;
+    max-width: calc(100vw - 40px);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.submenu:hover #carrito {
+    display: block;
+}
+
+/* Estilos para la tabla dentro del carrito */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    color: #ffffff;
+    padding: 10px;
+}
+
+/* Estilos para el botón de vaciar carrito */
+#vaciar-carrito {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#vaciar-carrito:hover {
+    background-color: #000000;
+}
+
+/* Estilos para el botón de comprar */
+#comprar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#comprar:hover {
+    background-color: #b89f2d;
+}
+
+/* Estilos para el icono del carrito */
+#img-carrito {
+    cursor: pointer;
+    width: 30px;
+    height: auto;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.carrito-botones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#comprar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#comprar:hover {
+    background-color: #333;
+}
+
+.carrito-botones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.btn-2, #comprar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #111111;
+    color: #f5f5f5;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#comprar {
+    background-color: #000000;
+}
+
+.btn-2:hover, #comprar:hover {
+    background-color: #333;
+}
+
+.footer .contact li {
+    color: white;
+}
+
+.footer .contact h3,
+.footer .contact li {
+    color: white;
+}

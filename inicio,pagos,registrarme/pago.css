@@ -1,0 +1,56 @@
+
+.payment-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.payment-section h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.payment-category {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+.payment-category .category-title {
+    width: 150px;
+    font-weight: bold;
+    color: #333;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.payment-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.payment-options img {
+    width: 60px;
+    height: auto;
+}
+
+.back-to-home {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-home {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000; /* Color de fondo del botón */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn-home:hover {
+    background-color: #000000; /* Color de fondo al pasar el ratón */
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubicación - Milo</title>
+    <link rel="stylesheet" href="ubicacion.css">
+</head>
+<body>
+
+    <!-- Botón Volver al Inicio -->
+    <a href="/index.html" class="btn-volver">Volver al Inicio</a>
+
+
+    <section class="ubicacion">
+        <h2>UBICACIÓN</h2>
+        <p><span>📍</span> Cmte. José A. Salas 339 &nbsp; | &nbsp; <span>🕒</span> Lunes a viernes 9:30 a 18:30 hs.</p>
+        <p class="estacionamiento">Estacionamiento y seguridad privada en la puerta y alrededores</p>
+        
+        <!-- Google Maps iframe -->
+        <div class="mapa">
+            <iframe 
+                src="//www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13134.81616009225!2d-68.3311614!3d-34.6116447!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967907fcd447e837%3A0xf485f4665d28c781!2sColegio%20Del%20Carmen!5e0!3m2!1ses!2sar!4v1730007187514!5m2!1ses!2sar" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('btn-volver').addEventListener('click', function (e) {
+            e.preventDefault(); 
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MILO JOYAS</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+<header class="header">
+    <div class="menu container">
+       <input style="display: none;" type="checkbox" id="menu-toggle" />
+       <label for="menu-toggle">
+       </label>
+       <nav class="navbar">
+           <ul>
+            <li><a href="https://wa.me/2604390068" target="_blank">CONTACTANOS</a></li>
+            <li><a href="/inicio,pagos,registrarme/pagos.html">PAGOS</a></li>
+            <li><a href="admin/registro.html" target="_blank">ADMIN</a></li>
+           </ul>
+       </nav>
+       <div class="menu-movil">
+        <button onclick="toggleMenu()">☰</button>
+        <div id="menu-items" style="display: none;">
+            <li><a href="admin/registro.html" target="_blank">ADMIN</a></li>
+            <li><a href="https://wa.me/2604390068" target="_blank">CONTACTANOS</a></li>
+            <li><a href="/inicio,pagos,registrarme/pagos.html">PAGOS</a></li>
+        </div>
+    </div>
+</nav>
+       <div>
+           <ul>
+               <li class="submenu">
+                   <img src="/images/car.svg" id="img-carrito" alt="carrito">
+                   <div id="carrito">
+                       <table id="lista-carrito">
+                           <thead>
+                               <tr>
+                                   <th>Imagen</th>
+                                   <th>Nombre</th>
+                                   <th>Precio</th>
+                                   <th></th>
+                               </tr>
+                           </thead>
+                           <tbody></tbody>
+                       </table>
+                        <a href="#" id="vaciar-carrito" class="btn-2">Vaciar carrito</a>
+                        <a href="https://wa.me/CODIGO_DE_PAISNUMERO" id="comprar" class="btn-comprar">Comprar</a> 
+                   </div>
+               </li>
+           </ul>
+       </div>
+    </div>
+
+    <div class="header-content container">
+        <div class="header-img">
+            <img src="/images/fonfooo.webp" alt="Imagen de fondo">
+        </div>
+        <div class="header-txt">
+            <h1>MILO JOYAS</h1>
+            <p>Resalta con tus joyas</p>
+            <a href="ubicacion/ubicacion.html" class="btn-1">Información</a>
+        </div>
+    </div>
+    
+</header>
+
+<section class="ofert container">
+    <div class="ofert-1">
+        <div class="img">
+          <img src="/aros/juno-aros-rosa-p-1_460x.webp" alt="">
+        </div>
+        <div class="ofert-txt">
+            <h3>Aros</h3>
+            <a href="aros/aros.html" class="btn-2">visitar</a>
+        </div>
+    </div>
+
+    <div class="ofert-1">
+        <div class="img">
+          <img src="/anillos/cannes-ali-rosa-3-magenta-u_720x.webp" alt="">
+        </div>
+        <div class="ofert-txt">
+            <h3>Anillos</h3>
+            <a href="anillos/anillos.html" class="btn-2">visitar</a>
+        </div>
+    </div>
+
+    <div class="ofert-1">
+        <div class="img">
+          <img src="/colgantes/juno-col-rosa-1_460x.webp" alt="">
+        </div>
+        <div class="ofert-txt">
+            <h3>Colgantes</h3>
+            <a href="colgantes/colgantes.html" class="btn-2">visitar</a> 
+        </div>
+    </div>
+</section>
+
+<main class="products container" id="lista-1">
+    <h2>ofertas</h2>
+    <div class="product-content">
+        <div class="product">
+            <img src="/anillos/posicion-anillos-web_olympia_hera_720x.webp" alt="">
+            <div class="product-txt">
+                <h3>anillo de Diamantes</h3>
+                <p>anillo premium de diamandes blancos, ideal para propuestas</p>
+                <p class="precio">$256.000</p>
+                <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
+            </div>
+        </div>
+        <div class="product">
+            <img src="/anillos/posicion-anillos-web_Mesadetrabajo1copia23_720x.webp" alt="">
+            <div class="product-txt">
+                <h3>Anillo de oro </h3>
+                <p>del oro mas puro con bellos detalles, ideal para el dia de la madre </p>
+                <p class="precio">$80.000</p>
+                <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
+            </div>
+        </div>
+        <div class="product">
+            <img src="/aros/lovely-aros-rosa-p--2_460x.webp" alt="">
+            <div class="product-txt">
+                <h3>aritos de oro</h3>
+                <p>aros de oro, muy finos y delicados
+                    ideal para algo casual
+                </p>
+                <p class="precio">$23.000</p>
+                <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
+            </div>
+        </div>
+        <div class="product">
+            <img src="/colgantes/dije-love-1_460x.webp" alt="">
+            <div class="product-txt">
+                <h3>Colgante love</h3>
+                <p>este colgante de zafiro es ideal para tu pareja</p>
+                <p class="precio">$30.000</p>
+                <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
+            </div>
+        </div>
+        <div class="product">
+            <img src="/colgantes/juno-col-rosa-1_460x.webp" alt="">
+            <div class="product-txt">
+                <h3>colgante de diamantes</h3>
+                <p>nuestro colagnte de diamantes blancos es ideal para cenas galas y convinar con tu elegancia</p>
+                <p class="precio">$220.000</p>
+                <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar al carrito</a>
+            </div>
+        </div>
+        <div class="product">
+            <img src="/aros/iconic-aros-rosa-piedras-p-1_2a1739bb-bc65-4d56-a7df-3f7ee8d35953_460x.webp" alt="">
+            <div class="product-txt">
+                <h3>aros de diamantes</h3>
+                <p>con diamantes pequeños, ideal para algo casual o no tanto </p>
+                <p class="precio">$60.000</p>
+                <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar al carrito</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<section class="blog container">
+    <div class="blog-1">
+        <img src="" alt="">
+        <h3>Nuestros Diamantes</h3>
+        <p>Diamantes únicos por su brillo y luminosidad vibrante.
+             El reflejo de los más altos estándares en corte, pureza y color</p>
+    </div>
+    <div class="blog-1">
+        <img src="/DALL·E 2024-10-29 00.01.46 - A brilliant-cut diamond resting on a dark textured surface, similar to black velvet, with a subtle reflection of the diamond visible on the surface. T.webp" alt="">
+        <h3>Nuestro Oro</h3>
+        <p> Oro puro, trabajado con dedicación para reflejar la esencia de la exclusividad en cada pieza.</p>
+    </div>
+    <div class="blog-1">
+        <img src="/gold_image_resized_5374x3583.png" alt="">
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer-content container">
+        <div class="link">
+            <h3>Información</h3>
+            <ul>
+                <li><a href="/404/404.html">Preguntas Frecuentes</a></li>
+                <li><a href="/404/404.html">Política de Privacidad</a></li>
+                <li><a href="/404/404.html">Términos y Condiciones</a></li>
+                <li><a href="/404/404.html">Devoluciones</a></li>
+            </ul>
+        </div>
+        <div class="link">
+            <h3>Redes Sociales</h3>
+            <ul>
+                <li><a href="/404/404.html">Instagram</a></li>
+                <li><a href="/404/404.html">Facebook</a></li>
+                <li><a href="/404/404.html">Twitter</a></li>
+                <li><a href="/404/404.html">Pinterest</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h3>Contáctanos</h3>
+            <ul>
+                <li>Email: milojoyas@gmail.com</li>
+                <li><a href="https://wa.me/2604390068" class="btn-1">WhatsApp</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script src="llama.js"></script>
+</body>
+</html>
