@@ -84,3 +84,19 @@ function toggleMenu() {
     const menuItems = document.getElementById("menu-items");
     menuItems.style.display = menuItems.style.display === "none" ? "block" : "none";
 }
+
+document.getElementById('login-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const usuario = this.querySelector('input[type="text"]').value;
+    const password = this.querySelector('input[type="password"]').value;
+    
+    // Aquí puedes agregar la lógica de validación
+    // Por ejemplo, verificar contra credenciales predefinidas
+    if(usuario === "admin" && password === "admin") {
+        // Redirigir a la página de administración
+        window.location.href = 'admin/registro.html';
+    } else {
+        alert('Usuario o contraseña incorrectos');
+    }
+});
